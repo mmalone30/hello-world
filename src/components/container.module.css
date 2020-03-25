@@ -4,6 +4,9 @@
   padding: 3rem;
 }
 
-.container .container-small {
-  background: red;
+
+@media screen and (max-width: 575px) {
+  .container {
+    padding:1.5rem;
+  }
 }

@@ -161,3 +161,9 @@
 .work a:hover .WorkItemLogo:after, .work a:focus .WorkItemLogo:after {
   opacity:0;
 }
+
+@media screen and (max-width: 575px) {
+  .work {
+    grid-template-columns: auto;
+  }
+}

@@ -8,21 +8,18 @@ export default () => (
   <Layout>
     <Nav></Nav>
     <Container>
-      <div class="container-small">
-        <h2>Contact</h2>
-        <p>
-          <Link to="mailto:mitch@mitchmaloneonline">mitch@mitchmaloneonline.com</Link>
-        </p>
-        <p>
-          <Link to="twitter.com">Twitter</Link>
-        </p>
-        <p>
-          <Link to="linkedin.com">LinkedIn</Link>
-        </p>
-        <p>
-          <Link to="dribbble.com">Dribbble</Link>
-        </p>
-      </div>
+      <p>
+        <Link to="mailto:mitch@mitchmaloneonline">mitch@mitchmaloneonline.com</Link>
+      </p>
+      <p>
+        <Link to="twitter.com">Twitter</Link>
+      </p>
+      <p>
+        <Link to="linkedin.com">LinkedIn</Link>
+      </p>
+      <p>
+        <Link to="dribbble.com">Dribbble</Link>
+      </p>
     </Container>
   </Layout>
 )

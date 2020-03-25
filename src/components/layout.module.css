@@ -2,3 +2,10 @@
   display:grid;
   padding:2rem;
 }
+
+
+@media screen and (max-width: 575px) {
+  .layout {
+    padding:0rem;
+  }
+}
