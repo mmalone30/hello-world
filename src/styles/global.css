@@ -1,0 +1,73 @@
+@import url('https://use.typekit.net/idx0ebo.css');
+
+:root{
+  --color-blue_1: hsl(200, 100%, 48%);
+  --color-blue_2: hsl(200, 100%, 88%);
+  --color-blue_3: hsl(200, 100%, 96%);
+
+  --color-pink_1:hsla(330, 100%, 56%, 1);
+
+  --color-text_1: hsl(200, 16%, 24%);
+  --color-text_2: hsl(200, 16%, 56%);
+
+  --color-black_1:hsl(200, 16%, 8%);
+  --color-black_2:hsl(200, 16%, 24%);
+  --color-black_3:hsl(200, 16%, 56%);
+  --color-black_4:hsl(200, 16%, 72%);
+  --color-black_5:hsl(200, 16%, 88%);
+  --color-black_6:hsl(200, 16%, 96%);
+}
+
+body {
+  font-family: "myriad-pro";
+  font-size:20px;
+  line-height: 32px;
+  -webkit-font-smoothing: antialiased;
+  color: var(--color-text_1);
+  margin:0;
+  padding:0;
+}
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5 {
+  color:hsl(200, 16%, 8%);
+}
+
+h1 {
+  font-size:2rem;
+  line-height: 2.5rem;
+  margin-bottom: 4rem;
+  max-width: 32rem;
+}
+
+h2 {
+  font-size:2rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size:24px;
+  line-height: 32px;
+}
+
+p + p {
+  margin-top:1rem;
+}
+
+a {
+  color:var(--color-blue_1);
+  text-decoration-skip: ink;
+  text-decoration-color: var(--color-blue_2);
+}
+
+.container-small {
+  max-width: 52rem;
+  margin: 0 auto;
+}

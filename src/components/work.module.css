@@ -1,0 +1,163 @@
+.work {
+  list-style:none;
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 2rem;
+}
+
+
+.work a {
+  background-color:var(--color-blue_3);
+  display: grid;
+  grid-template-rows: 16rem 1fr;
+  position: relative;
+  transition:all ease-in-out 200ms;
+  text-decoration: none;
+}
+
+
+.work a:hover,.work a:focus {
+  background:white;
+  transform:translateY(-0.5rem);
+  box-shadow: 0 24px 24px -12px rgba(0,0,0,0.1);
+  outline:0;
+}
+
+.work a:hover .WorkItemImage:after, .work a:focus .WorkItemImage:after {
+  opacity:0;
+}
+
+.WorkItemImage {
+  width:100%;
+  height: 16rem;
+  display:block;
+  position:relative;
+}
+
+.WorkItemImage:after {
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  z-index: 1;
+  background-color:var(--color-blue_1);
+  mix-blend-mode: color;
+  transition:all ease-in-out 200ms;
+}
+
+.work a:first-of-type .WorkItemImage {
+  background-image: url('https://images.unsplash.com/photo-1494412651409-8963ce7935a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80');
+  background-size: cover;
+}
+
+.work a:nth-of-type(2) .WorkItemImage {
+  background-image: url('https://images.unsplash.com/photo-1501548420344-9305bcf84615?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2734&q=80');
+  background-size: cover;
+}
+
+.work a:nth-of-type(3) .WorkItemImage {
+  background-image: url('https://mitchmalone.design/images/magazines.jpg');
+  background-size: cover;
+}
+
+.work a:nth-of-type(4) .WorkItemImage {
+  background-image: url('https://mitchmalone.design/images/galaxy.jpg');
+  background-size: cover;
+}
+
+.work a:nth-of-type(5) .WorkItemImage {
+  background-image: url('https://mitchmalone.design/images/playing.jpg');
+  background-size: cover;
+}
+
+.work a:last-of-type .WorkItemImage {
+  background-image:url('https://mitchmalone.design/images/doctor.jpg');
+  background-size: cover;
+}
+
+.WorkItemDescription {
+  padding:1.5rem;
+  display:grid;
+  grid-gap: 0.25rem;
+  grid-template-rows: minmax(min-content, max-content);
+}
+
+.WorkItemDescription small {
+  align-self:end;
+}
+
+.WorkItemDescription h3 {
+  font-weight: 400;
+  font-size:1.25rem;
+
+}
+
+.WorkItemDescription p {
+  color:var(--color-blue_1);
+
+}
+
+.WorkItemLabel {
+  font-size:1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  background:var(--color-pink_1);
+  color:white;
+  padding:0.5rem 1rem;
+  border-radius:3px;
+  position:absolute;
+  top:1rem;
+  left:1rem;
+  opacity: 0;
+  z-index: 1;
+  transition:all ease-in-out 200ms;
+  transform:translateY(0.5rem);
+}
+
+.work a:hover .WorkItemLabel, .work a:focus .WorkItemLabel {
+  opacity: 1;
+  transform:translateY(0rem);
+}
+
+.work a:hover .WorkItemDescription p, .work a:focus .WorkItemDescription p,
+.work a:hover .WorkItemDescription small, .work a:focus .WorkItemDescription small {
+  color:var(--color-text_2);
+}
+
+.work a:hover .WorkItemLogo, .work a:focus .WorkItemLogo {
+  background:white;
+}
+
+.WorkItemLogo {
+  position: absolute;
+  z-index: 1;
+  background: var(--color-blue_3);
+  height: 4rem;
+  width: 4.5rem;
+  top: 13.75rem;
+  left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in-out 200ms;
+}
+
+.WorkItemLogo:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: var(--color-blue_1);
+  mix-blend-mode: color;
+  transition: all ease-in-out 200ms;
+}
+
+.work a:hover .WorkItemLogo:after, .work a:focus .WorkItemLogo:after {
+  opacity:0;
+}
