@@ -1,0 +1,20 @@
+img.pic {
+  width:32rem;
+
+}
+
+@media screen and (max-width: 720px) {
+  img.pic {
+    width:16rem;
+    float:none;
+    margin: 0 0 1rem 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  img.pic {
+    width:100%;
+    float:none;
+    margin: 0 0 1rem 0;
+  }
+}
