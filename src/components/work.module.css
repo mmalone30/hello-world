@@ -7,19 +7,20 @@
 
 
 .work a {
-  background-color:var(--color-blue_3);
+  background-color:white;
   display: grid;
   grid-template-rows: 16rem 1fr;
   position: relative;
   transition:all ease-in-out 200ms;
   text-decoration: none;
+
 }
 
 
 .work a:hover,.work a:focus {
   background:white;
   transform:translateY(-0.5rem);
-  box-shadow: 0 24px 24px -12px rgba(0,0,0,0.1);
+  box-shadow: 0 32px 40px -16px rgba(0,0,0,0.15);
   outline:0;
 }
 
@@ -42,7 +43,7 @@
   top:0;
   bottom:0;
   z-index: 1;
-  background-color:var(--color-blue_1);
+  background-color:var(--color-black_6);
   mix-blend-mode: color;
   transition:all ease-in-out 200ms;
 }
@@ -84,26 +85,28 @@
   grid-template-rows: minmax(min-content, max-content);
 }
 
+
 .WorkItemDescription small {
   align-self:end;
+  color:var(--color-text_2);
 }
 
 .WorkItemDescription h3 {
-  font-weight: 400;
+  font-weight: 500;
   font-size:1.25rem;
 
 }
 
 .WorkItemDescription p {
-  color:var(--color-blue_1);
+  color:var(--color-text_2);
 
 }
 
 .WorkItemLabel {
   font-size:1rem;
   line-height: 1.5rem;
-  font-weight: 600;
-  background:var(--color-pink_1);
+  font-weight: 500;
+  background:var(--color-blue_1);
   color:white;
   padding:0.5rem 1rem;
   border-radius:3px;
@@ -133,7 +136,7 @@
 .WorkItemLogo {
   position: absolute;
   z-index: 1;
-  background: var(--color-blue_3);
+  background: white;
   height: 4rem;
   width: 4.5rem;
   top: 13.75rem;
@@ -153,7 +156,7 @@
   left: 0;
   bottom: 0;
   right: 0;
-  background: var(--color-blue_1);
+  background: white;
   mix-blend-mode: color;
   transition: all ease-in-out 200ms;
 }
@@ -165,5 +168,43 @@
 @media screen and (max-width: 575px) {
   .work {
     grid-template-columns: auto;
+    grid-gap: 3rem;
+  }
+  .WorkItemLabel {
+    opacity: 1;
+    bottom:0rem;
+    top:auto;
+    left:0;
+    right:0;
+    text-align: center;
+    transform:translateY(0);
+  }
+
+  .WorkItemLogo {
+    left:-0.65rem;
+  }
+
+  .WorkItemLogo:after {
+    opacity:0;
+  }
+
+  .WorkItemImage:after {
+    opacity:0;
+  }
+  .WorkItemDescription {
+    padding-left:0;
+    padding-right:0;
+    padding-bottom:3rem;
+  }
+
+
+
+  .work a:focus {
+    box-shadow: 0 0 0 0 rgba(0,0,0,0);
+    transform:translateY(0);
+  }
+  .work a:hover {
+    box-shadow: 0 0 0 0 rgba(0,0,0,0);
+    transform:translateY(0);
   }
 }

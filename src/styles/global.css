@@ -1,9 +1,10 @@
-@import url('https://use.typekit.net/idx0ebo.css');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
 
 :root{
   --color-blue_1: hsl(200, 100%, 48%);
-  --color-blue_2: hsl(200, 100%, 88%);
-  --color-blue_3: hsl(200, 100%, 96%);
+  --color-blue_2: hsl(200, 100%, 72%);
+  --color-blue_3: hsl(200, 100%, 88%);
+  --color-blue_4: hsl(200, 100%, 96%);
 
   --color-pink_1:hsla(330, 100%, 56%, 1);
 
@@ -16,13 +17,17 @@
   --color-black_4:hsl(200, 16%, 72%);
   --color-black_5:hsl(200, 16%, 88%);
   --color-black_6:hsl(200, 16%, 96%);
+
+  --font-headline: "rift";
+  --font-body: "DM Sans";
 }
 
 body {
-  font-family: "myriad-pro";
+  font-family: var(--font-body);
   font-size:20px;
   line-height: 32px;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
   color: var(--color-text_1);
   margin:0;
   padding:0;
@@ -36,13 +41,24 @@ body {
 
 h1, h2, h3, h4, h5 {
   color:hsl(200, 16%, 8%);
+  font-weight:500;
 }
 
 h1 {
-  font-size:2rem;
-  line-height: 2.5rem;
+  font-size:3.5rem;
+  line-height: 4rem;
+  font-weight:400;
   margin-bottom: 4rem;
-  max-width: 32rem;
+  max-width: 48rem;
+}
+
+h1:after {
+  content:"";
+  width:4rem;
+  height:0.25rem;
+  display: block;
+  margin-top:2rem;
+  background:var(--color-blue_2);
 }
 
 h2 {
@@ -97,6 +113,8 @@ img {
 @media screen and (max-width: 575px) {
   h1 {
     margin-bottom:2rem;
+    font-size:2rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -114,7 +132,7 @@ img {
 }
 
 @media screen and (max-width: 480px) {
-  
+
 
   .about_section-content {
     order:2;

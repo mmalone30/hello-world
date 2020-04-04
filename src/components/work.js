@@ -48,7 +48,7 @@ export default () => (
 
       <WorkItem
         title="Sharethrough Reporting Design"
-        subtitle="Making it easier for publishers to improve their inventory by surfacing problems and opportunities"
+        subtitle="Designing a new way to understand digital advertising performance"
         date="2017"
         logo={sharethrough}
       />
