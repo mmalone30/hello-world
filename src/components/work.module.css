@@ -49,23 +49,27 @@
 }
 
 .work a:first-of-type .WorkItemImage {
-  background-image: url('https://images.unsplash.com/photo-1494412651409-8963ce7935a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80');
+  background-image: url('https://uc329c288a530ecf4f2f2189d06d.previews.dropboxusercontent.com/p/thumb/AAw-Ya9JSp3isj2jkiODecECtS6ix6dYZl-jGp0-F7EeFySgHyuljmg6ircP_WbC_-FHFiPegjSlrtyPl8jp-EzCyTwXp6YJTuTbKVsO2oOK-Ht9ZE6ikrCB6NgZdRAWyAOC603Zm6IGfO6OwCH6qaqpC8lOQ71wT8ZbNtsAmqts-wIAqcMtGYxlI7emUy-LGXRzBr14e4XCHKmnZCtsnPBT1B95qs7_tO70rwPyrJEcVEY3ixAuRX9oczR6-sYPDv43wA44ZSJK_3FSXv6-jhZOFPV1qYuCzftuYOipGqRSl6aUheg7umY2gRex5F9ZR9p6QKzWPkFhYPlISPZhc2vDhOB55Bncxc3b_vj3va9nP17JT1os0vp3Jtuo8dy3lsvghYtRZQ5rMyLXQ0s4_2vA/p.png');
   background-size: cover;
+  background-color:#F69C20;
 }
 
 .work a:nth-of-type(2) .WorkItemImage {
-  background-image: url('https://images.unsplash.com/photo-1501548420344-9305bcf84615?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2734&q=80');
+  background-image: url('https://uc78e5e291fc2867e56dd833ab80.previews.dropboxusercontent.com/p/thumb/AAwDo9jwRhLmtjJuVSCwMi-sz93CCYGbjsaP-_x2D-zJjrUPA8gcoCW1qDbsk7L8Sip6JfmvGWVwvYTD37L9YBCEJrM26Ja3UY_0jkQTbTTxBWnv5wlWC7QVX5jKsxgI74rb2syGD6D62rxFUZCAPzrskqbCaPBXTLEcycxjlM_RKzo9nWknqq2tKn-Lq-uv0LY72h-6vUVvGjQOPuTaV0zn69MJpMMo6aHB9e3Hfwm0--liWQbIPlKdjeOcv0n6wIbEV6wenvmUbeaakHiGrzJCbeNOZKQJ83G9D6I1fJJzZ7S6PNxFu_C0jwzIruxiScexDw5FCKQJHpwGDJLf7ex_hmPG1XanvWEn4oLSFfPaXMPkEZWmyNR_ljZMseYsLPuoP0C1QuqyHltgywoh7byJ/p.png');
   background-size: cover;
+  background-color:#00cdbe;
 }
 
 .work a:nth-of-type(3) .WorkItemImage {
-  background-image: url('https://mitchmalone.design/images/magazines.jpg');
-  background-size: cover;
+  background-image: url('https://uc477242d87d19ac95e17cd1a800.previews.dropboxusercontent.com/p/thumb/AAypCznyG13V_skbcN337UNKZyL2aeYRLi3kkX1U1IbtybKTC5jqzgTTwMPhPmCTQ_a5LbddfRHZz7TfkhzQHMpkRVqxFzYGQLWVY5m3b8xlmz6aox0AyDjUce6Io6B-9wNgDEbZh4XWOWG-IlrdM_rDIwnSqvyofsyVN1t82hkYgEFOSnBIMgWJUsv5IYnXZ4kAi9hZyWVOu91_VMBpDHH4g49eSEeOrQt6fJL3-AOy9nIDse4yFMzctcSrSeTxVkIHq9dKPI2QFYw4P_q3vFAmlYAd2nMpSeGaFHK4zCH8x8DWXqd1mOIOJwITlLSSGU-T8UvaHlzTMECFsVfE7YqPeOYW5uvpL8IPARssC5vHCS3UvQR_bT0l4VSzlP1XMFAUGZIfzZ6fbhCNznZC7DNU/p.png');
+  background-size:cover;
+  background-color:#6b79c7;
 }
 
 .work a:nth-of-type(4) .WorkItemImage {
-  background-image: url('https://mitchmalone.design/images/galaxy.jpg');
-  background-size: cover;
+  background-image: url('https://uc477242d87d19ac95e17cd1a800.previews.dropboxusercontent.com/p/thumb/AAypCznyG13V_skbcN337UNKZyL2aeYRLi3kkX1U1IbtybKTC5jqzgTTwMPhPmCTQ_a5LbddfRHZz7TfkhzQHMpkRVqxFzYGQLWVY5m3b8xlmz6aox0AyDjUce6Io6B-9wNgDEbZh4XWOWG-IlrdM_rDIwnSqvyofsyVN1t82hkYgEFOSnBIMgWJUsv5IYnXZ4kAi9hZyWVOu91_VMBpDHH4g49eSEeOrQt6fJL3-AOy9nIDse4yFMzctcSrSeTxVkIHq9dKPI2QFYw4P_q3vFAmlYAd2nMpSeGaFHK4zCH8x8DWXqd1mOIOJwITlLSSGU-T8UvaHlzTMECFsVfE7YqPeOYW5uvpL8IPARssC5vHCS3UvQR_bT0l4VSzlP1XMFAUGZIfzZ6fbhCNznZC7DNU/p.png');
+  background-size:cover;
+  background-color:#6b79c7;
 }
 
 .work a:nth-of-type(5) .WorkItemImage {
@@ -106,7 +110,7 @@
   font-size:1rem;
   line-height: 1.5rem;
   font-weight: 500;
-  background:var(--color-blue_1);
+  background:var(--color-black_1);
   color:white;
   padding:0.5rem 1rem;
   border-radius:3px;

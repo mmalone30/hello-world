@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
+@import url('https://rsms.me/inter/inter.css');
 
 :root{
   --color-blue_1: hsl(200, 100%, 48%);
@@ -19,7 +19,7 @@
   --color-black_6:hsl(200, 16%, 96%);
 
   --font-headline: "rift";
-  --font-body: "DM Sans";
+  --font-body: "inter";
 }
 
 body {
@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-size:3.5rem;
   line-height: 4rem;
-  font-weight:400;
+  font-weight:200;
   margin-bottom: 4rem;
   max-width: 48rem;
 }
@@ -58,7 +58,7 @@ h1:after {
   height:0.25rem;
   display: block;
   margin-top:2rem;
-  background:var(--color-blue_2);
+  background:var(--color-black_1);
 }
 
 h2 {
