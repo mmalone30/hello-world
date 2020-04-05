@@ -4,6 +4,7 @@ import next from "../../static/next.svg"
 import sharethrough from "../../static/sharethrough.svg"
 import kareo from "../../static/kareo.svg"
 import weedmaps from "../../static/weedmaps.svg"
+import poplibs from "../../static/poplibs.svg"
 import workStyles from "./work.module.css"
 
 
@@ -57,7 +58,7 @@ export default () => (
         title="Poplibs"
         subtitle="A simple Madlibs-style game for the internet"
         date="2017"
-        logo={next}
+        logo={poplibs}
       />
 
       <WorkItem

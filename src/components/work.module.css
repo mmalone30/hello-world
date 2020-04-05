@@ -73,13 +73,15 @@
 }
 
 .work a:nth-of-type(5) .WorkItemImage {
-  background-image: url('https://mitchmalone.design/images/playing.jpg');
+  background-image: url('https://uc5109b5638894ad27edbcad1357.previews.dropboxusercontent.com/p/thumb/AAx5XzDKOAhuXvBQfn_dJq7Fml6dZyzTxrkt9yn8hwyOn-si7fIYiMpnk1rQt700lLxg1Rq3rl364NRkM2McixrST44tHOPP9mloBUvqod7hOtDvXlM5WCal7x1aIEgfk-SddnylExQnGAm_95_52rG7q0e8oybYQQim6HBLYOHpLxH_G4fNZQwYaQIn6BKjgqnQTSx5CvplMb6uBL-wnUAz7h5YRC5O28dd_MjdkR8VaNFVlhNFr9_i5-goeqgBHRvk19pXQksbsVTVwb5-ZfDm9bEhrRfQ3XIy7KiNt7GjfIizU1Eu_ex7kwwxtOYrBIjmQwjFuGr7vQuqL78ckT3SlrRg8Y5LSqHlDwfxAsInwRqf5iE8UaIKhJFKuYQnPXSWO7FGedSSLfjbCoCVzHZp/p.png');
   background-size: cover;
+  background-color: #02BFFD;
 }
 
 .work a:last-of-type .WorkItemImage {
-  background-image:url('https://mitchmalone.design/images/doctor.jpg');
+  background-image:url('https://uc5c072cf09c75ff6977bc296954.previews.dropboxusercontent.com/p/thumb/AAwgUEXzrSQQHW1ZENVWVg9NEO7PHXMlzfFYsPeHc4KVxXGVZk5K02FJFHRevJ8ilhs8ioC6Qi_kxGPgorWDaDJU9_qo1k-Wj2njJZaXq3ZyiYeeRk2Mf7nACoxvNbJVd12Jg3EmUvCEPoRTIfjYNISEreGHww2-j7aLZ85N6V11F3C-s9VfDV-3uLkrSqJebcKiZxrl1ZY8hBxE3PkWaHUH-h4TILTwEP3qtg9wDSxGhs2SB2VXrgwahn4P25iglKg92Ll_lZUNClOSw-75vQ_dMpwVvWVCM4ztTrU_CiYvytjfml-lu4vQG1x8UrZjw5HGABx6IxJSTic4Y7DDNcnmqDomuX0Hr89-9jl_jQzn7mS1rQaFY6ZnblP3i_GHvW8kfxTRfQh9C-G5sx5nN-dC/p.png');
   background-size: cover;
+  background-color: #f7941d;
 }
 
 .WorkItemDescription {
