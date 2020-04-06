@@ -9,7 +9,7 @@ import workStyles from "./work.module.css"
 
 
 const WorkItem = props => (
-  <a href="#" className={workStyles.WorkItemWrapper}>
+  <Link to={props.url} className={workStyles.WorkItemWrapper}>
     <div class={workStyles.WorkItemLogo}>
       <img src={props.logo} />
     </div>
@@ -20,13 +20,14 @@ const WorkItem = props => (
       <p>{props.subtitle}</p>
       <small>{props.date}</small>
     </div>
-  </a>
+  </Link>
 )
 
 export default () => (
   <div className={workStyles.work}>
 
       <WorkItem
+        url="/atlas/"
         title="ATLAS"
         subtitle="Internal software platform for NEXT operations"
         date="2019"

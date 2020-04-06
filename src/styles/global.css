@@ -82,9 +82,10 @@ p + p {
 }
 
 a {
-  color:var(--color-blue_1);
+  color:var(--color-black_1);
   text-decoration-skip: ink;
-  text-decoration-color: var(--color-blue_2);
+  text-decoration-color: var(--color-black_4);
+  font-weight: 500;
 }
 
 .container-small {
@@ -108,6 +109,22 @@ img {
 
 .about_section img {
   margin:0;
+}
+
+.workExample {
+  display:grid;
+  grid-gap:2rem;
+  grid-template-columns: 16rem 1fr;
+}
+
+.workExample ul {
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+
+.workExample ul li + li {
+  margin-top:2rem;
 }
 
 @media screen and (max-width: 575px) {
