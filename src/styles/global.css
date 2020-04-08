@@ -77,9 +77,24 @@ p {
   max-width:48rem;
 }
 
+.lead {
+  font-size:1.75rem;
+  line-height: 2.5rem;
+  font-weight: 300;
+}
+
+p + h3 {
+  margin-top:3rem;
+}
+
+h3 + p {
+  margin-top:1rem;
+}
+
 p + p {
   margin-top:1rem;
 }
+
 
 a {
   color:var(--color-black_1);
@@ -113,8 +128,8 @@ img {
 
 .workExample {
   display:grid;
-  grid-gap:2rem;
-  grid-template-columns: 16rem 1fr;
+  grid-gap:6rem;
+  grid-template-columns: 1fr 16rem;
 }
 
 .workExample ul {
@@ -125,6 +140,27 @@ img {
 
 .workExample ul li + li {
   margin-top:2rem;
+}
+
+.workExample .mainContent > * {
+  margin:0 auto;
+}
+
+.workExample .mainContent section {
+  max-width:48rem;
+}
+
+.workExample .mainContent section + section, .workExample .mainContent section + figure {
+  margin-top:2rem;
+}
+
+figure figcaption {
+  font-size:1rem;
+  line-height: 1.5rem;
+}
+
+.workExample .mainContent > .gatsby-image-wrapper {
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 575px) {
