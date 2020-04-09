@@ -28,8 +28,13 @@ export default () => {
     <Layout>
       <Nav></Nav>
       <Container className="container">
-        <h1>ATLAS</h1>
+        <header class="workHeader next">
+          
+          <h2>ATLAS</h2>
+          <h3>Internal software platform for NEXT operations</h3>
+        </header>
         <div class="workExample">
+
           <div class="mainContent">
             <Img fluid={data.atlashomepage.childImageSharp.fluid} />
             <section>
@@ -51,7 +56,7 @@ export default () => {
               There are dozens, maybe hundreds, of service failure scenarios that need to be accounted for. That is the reality of any trucking business. On top of all that, we wanted to completely change how truckers found and completed work by using a marketplace app on their smartphone completely upending the status quo. Easy!
               </p>
               <p>
-                What we needed in addition to a driver app full of jobs to complete was a comprehensive, powerful, modern software suite for the back office. The toolkit needed to supply the driver app with jobs, to monitor those jobs, and to prevent, or at least resolve, the service failures that happen along the way with those jobs.
+                We needed a comprehensive, powerful, modern software suite for the back office. The toolkit needed to supply the driver app with jobs, to monitor those jobs, and to prevent, or at least resolve, the service failures that happen along the way with those jobs.
               </p>
               <h3>The primary user</h3>
               <p>
@@ -66,10 +71,6 @@ export default () => {
             </figure>
           </div>
           <ul class="sidebar">
-            <li>
-
-              <img src={next} />
-            </li>
             <li>
               <h4>Date</h4>
               <p>July 2019</p>
