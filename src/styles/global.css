@@ -11,6 +11,7 @@
   --color-text_1: hsl(200, 16%, 24%);
   --color-text_2: hsl(200, 16%, 56%);
 
+  --color-black_0:hsl(200, 24%, 4%);
   --color-black_1:hsl(200, 16%, 8%);
   --color-black_2:hsl(200, 16%, 24%);
   --color-black_3:hsl(200, 16%, 56%);
@@ -45,11 +46,12 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size:3.5rem;
-  line-height: 4rem;
-  font-weight:200;
-  margin-bottom: 4rem;
-  max-width: 48rem;
+  font-size:2rem;
+  line-height: 3rem;
+  font-weight:600;
+  margin: 4rem 0;
+  max-width: 32rem;
+  color: var(--color-text_1);
 }
 
 h1:after {
@@ -58,7 +60,7 @@ h1:after {
   height:0.25rem;
   display: block;
   margin-top:2rem;
-  background:var(--color-black_1);
+  background:var(--color-black_2);
 }
 
 h2 {
@@ -106,6 +108,10 @@ a {
 .container-small {
   max-width: 52rem;
   margin: 0 auto;
+}
+
+.homepage {
+  background:black;
 }
 
 img {

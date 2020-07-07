@@ -14,7 +14,7 @@ const WorkItem = props => (
       <img src={props.logo} />
     </div>
     <div class={workStyles.WorkItemLabel}>View Project</div>
-    <div class={workStyles.WorkItemImage}></div>
+    
     <div class={workStyles.WorkItemDescription}>
       <h3>{props.title}</h3>
       <p>{props.subtitle}</p>

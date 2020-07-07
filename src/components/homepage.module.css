@@ -1,0 +1,21 @@
+.homepage {
+
+  padding:2rem;
+  background:black;
+}
+
+.homepage h1 {
+  color:white;
+}
+
+.homepage nav[class*="nav"] ul li a[class*="active"] {
+  color:white;
+
+}
+
+
+@media screen and (max-width: 575px) {
+  .homepage {
+    padding:0rem;
+  }
+}

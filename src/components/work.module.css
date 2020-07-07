@@ -1,26 +1,26 @@
 .work {
   list-style:none;
   display:grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: 1fr;
   grid-gap: 2rem;
 }
 
 
 .work a {
-  background-color:white;
+  background-color:var(--color-black_0);
   display: grid;
-  grid-template-rows: 16rem 1fr;
+  grid-template-columns: 6.5rem 1fr 10rem;
   position: relative;
   transition:all ease-in-out 200ms;
   text-decoration: none;
-
+  padding:2rem;
 }
 
 
 .work a:hover,.work a:focus {
-  background:white;
-  transform:translateY(-0.5rem);
-  box-shadow: 0 32px 40px -16px rgba(0,0,0,0.15);
+  background:var(--color-black_1);
+
+
   outline:0;
 }
 
@@ -100,7 +100,7 @@
 .WorkItemDescription h3 {
   font-weight: 500;
   font-size:1.25rem;
-
+  color: white;
 }
 
 .WorkItemDescription p {
@@ -112,13 +112,13 @@
   font-size:1rem;
   line-height: 1.5rem;
   font-weight: 500;
-  background:var(--color-black_1);
-  color:white;
+  background:white;
+  color:var(--color-text_1);
   padding:0.5rem 1rem;
   border-radius:3px;
   position:absolute;
-  top:1rem;
-  left:1rem;
+  top:3rem;
+  right:3rem;
   opacity: 0;
   z-index: 1;
   transition:all ease-in-out 200ms;
@@ -136,36 +136,21 @@
 }
 
 .work a:hover .WorkItemLogo, .work a:focus .WorkItemLogo {
-  background:white;
+
 }
 
 .WorkItemLogo {
-  position: absolute;
-  z-index: 1;
-  background: white;
+
   height: 4rem;
   width: 4.5rem;
-  top: 13.75rem;
-  left: 1rem;
+  margin:1rem;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all ease-in-out 200ms;
 }
 
-.WorkItemLogo:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: white;
-  mix-blend-mode: color;
-  transition: all ease-in-out 200ms;
-}
+
 
 .work a:hover .WorkItemLogo:after, .work a:focus .WorkItemLogo:after {
   opacity:0;
