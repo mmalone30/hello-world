@@ -13,7 +13,7 @@
   position: relative;
   transition:all ease-in-out 200ms;
   text-decoration: none;
-  padding:2rem;
+  padding:3rem;
 }
 
 
@@ -106,6 +106,7 @@
 .WorkItemDescription p {
   color:var(--color-text_2);
   font-weight: 400;
+  margin:0;
 }
 
 .WorkItemLabel {
@@ -171,8 +172,15 @@
     transform:translateY(0);
   }
 
+  .work a {
+    grid-template-columns: 1fr;
+    background:var(--color-black_1);
+    padding:2rem;
+  }
+
   .WorkItemLogo {
-    left:-0.65rem;
+    transform:translateX(-0.65rem);
+    margin:0;
   }
 
   .WorkItemLogo:after {
