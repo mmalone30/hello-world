@@ -116,7 +116,8 @@ a {
 
 header {
   background:black;
-  padding-bottom: 16rem;
+  padding:2rem;
+  height: 100vh;
 }
 
 header h2, header h3, header h4 {
@@ -171,7 +172,7 @@ img {
 .workExample {
   max-width: 100rem;
   margin:0 auto;
-  transform: translateY(-8rem);
+  transform: translateY(-12rem);
 }
 
 .workExample ul {
@@ -213,7 +214,7 @@ figure figcaption {
 }
 
 .workExample .mainContent > .gatsby-image-wrapper {
-  margin-bottom: 2rem;
+  margin-bottom: 8rem;
 }
 
 @media screen and (max-width: 575px) {
@@ -221,6 +222,13 @@ figure figcaption {
     margin-bottom:2rem;
     font-size:2rem;
     line-height: 2.5rem;
+  }
+}
+
+@media screen and (max-height: 875px) {
+  header {
+    height:auto;
+    padding-bottom:16rem;
   }
 }
 
