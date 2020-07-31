@@ -19,7 +19,7 @@
 
 .work a:hover,.work a:focus {
   background:var(--color-black_1);
-
+  transform: translateY(-2px);
 
   outline:0;
 }
@@ -107,6 +107,7 @@
   color:var(--color-text_2);
   font-weight: 400;
   margin:0;
+  max-width: 38rem;
 }
 
 .WorkItemLabel {
@@ -118,7 +119,7 @@
   padding:0.5rem 1rem;
   border-radius:3px;
   position:absolute;
-  top:3rem;
+  top:5rem;
   right:3rem;
   opacity: 0;
   z-index: 1;

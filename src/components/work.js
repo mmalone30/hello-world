@@ -14,7 +14,7 @@ const WorkItem = props => (
       <img src={props.logo} />
     </div>
     <div class={workStyles.WorkItemLabel}>View Project</div>
-    
+
     <div class={workStyles.WorkItemDescription}>
       <h3>{props.title}</h3>
       <p>{props.subtitle}</p>
@@ -28,8 +28,8 @@ export default () => (
 
       <WorkItem
         url="/atlas/"
-        title="ATLAS"
-        subtitle="Internal software platform for NEXT operations"
+        title="ATLAS Freight"
+        subtitle="Improving the user experience with a more coherent and intentional information architecture"
         date="2019"
         logo={next}
       />
