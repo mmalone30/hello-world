@@ -25,46 +25,45 @@ const WorkItem = props => (
 
 export default () => (
   <div className={workStyles.work}>
-
       <WorkItem
         url="/atlas/"
         title="ATLAS Freight"
-        subtitle="Improving the user experience with a more coherent and intentional information architecture"
-        date="2019"
+        subtitle="Improving the user experience with a more coherent and intentional information architecture."
+        date="2020"
         logo={next}
       />
 
       <WorkItem
         title="Weedmaps Social Experience"
-        subtitle="Growing the ad business with fun social interactions"
+        subtitle="Growing the ad business with fun social interactions."
         date="2018"
         logo={weedmaps}
       />
 
       <WorkItem
         title="Sharethrough Platform Alerts"
-        subtitle="Making it easier for publishers to improve their inventory by surfacing problems and opportunities"
+        subtitle="Making it easier for publishers to improve their inventory by surfacing problems and opportunities."
         date="2017"
         logo={sharethrough}
       />
 
       <WorkItem
         title="Sharethrough Reporting Design"
-        subtitle="Designing a new way to understand digital advertising performance"
+        subtitle="Designing a new way to understand digital advertising performance."
         date="2017"
         logo={sharethrough}
       />
 
       <WorkItem
         title="Poplibs"
-        subtitle="A simple Madlibs-style game for the internet"
+        subtitle="A simple Madlibs-style game for the internet."
         date="2017"
         logo={poplibs}
       />
 
       <WorkItem
         title="Kareo Patient Portal"
-        subtitle="Easily understand and pay your medical bills, message your doctor, and see your medical records"
+        subtitle="Easily understand and pay your medical bills, message your doctor, and see your medical records."
         date="2014"
         logo={kareo}
       />

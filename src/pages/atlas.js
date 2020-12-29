@@ -2,7 +2,6 @@ import React from "react"
 import { useStaticQuery,graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
-import Nav from "../components/nav"
 import Container from "../components/container"
 import next from "../../static/next.svg"
 export default () => {
@@ -15,9 +14,9 @@ export default () => {
           }
         }
       },
-      persona: file(relativePath: { eq: "persona.png" }) {
+      persona: file(relativePath: { eq: "OS-persona.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1920) {
+          fluid(maxWidth: 1376, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -27,7 +26,6 @@ export default () => {
  return (
   <div>
   <header>
-    <Nav></Nav>
     <Container className="container">
       <h2>ATLAS Freight</h2>
       <h3>Improving the user experience with a more coherent and intentional information architecture</h3>
@@ -81,7 +79,7 @@ export default () => {
       <figure class="image-hasCaption">
         <Img fluid={data.persona.childImageSharp.fluid} />
         <figcaption>
-          A model of Customer Service Representative goals, activities, and tasks.
+          A model of the Operational Specialist (OS) goals, activities, and tasks.
         </figcaption>
       </figure>
     </div>

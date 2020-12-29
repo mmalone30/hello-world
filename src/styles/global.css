@@ -20,11 +20,12 @@
   --color-black_6:hsl(200, 16%, 96%);
 
   --font-headline: "rift";
-  --font-body: "lft-etica";
+  --font-body: "myriad-pro";
 }
 
 body {
   font-family: var(--font-body);
+  font-weight: 400;
   font-size:20px;
   line-height: 32px;
   -webkit-font-smoothing: antialiased;
@@ -159,20 +160,28 @@ img {
 .about_section-content {
   padding:1.5rem;
   background:white;
-  transform:translate(8rem, -8rem);
+  transform:translate(8rem, -4rem);
 }
 
 .about_section img {
   margin:0;
 }
 
-
+.links {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  grid-gap: 2rem;
+  margin-top:4rem;
+  margin-bottom: 4rem;
+}
 
 
 .workExample {
   max-width: 100rem;
   margin:0 auto;
-  transform: translateY(-12rem);
+  padding:0 2rem;
+  transform: translateY(-24rem);
 }
 
 .workExample ul {

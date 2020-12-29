@@ -1,7 +1,14 @@
 .homepage {
 
   padding:2rem;
+  padding-top:8rem;
   background:black;
+  margin-bottom: -8rem;
+}
+
+.homepage + .homepage {
+  background: white;
+  padding-top:16rem;
 }
 
 .homepage h1 {
@@ -11,6 +18,19 @@
 .homepage nav[class*="nav"] ul li a[class*="active"] {
   color:white;
 
+}
+
+.homepage h2 {
+  color:white;
+  margin-bottom:2rem;
+}
+
+.homepage + .homepage h2 {
+  color: var(--text_1);
+}
+
+.homepage + .homepage p {
+  color: var(--text_2);
 }
 
 

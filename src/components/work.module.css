@@ -1,25 +1,26 @@
 .work {
   list-style:none;
   display:grid;
-  grid-template-columns: 1fr;
-  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
 }
 
 
 .work a {
   background-color:var(--color-black_0);
   display: grid;
-  grid-template-columns: 6.5rem 1fr 10rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 96px 1fr;
+  align-items: stretch;
   position: relative;
   transition:all ease-in-out 200ms;
   text-decoration: none;
-  padding:3rem;
+  padding:1rem;
 }
 
 
 .work a:hover,.work a:focus {
   background:var(--color-black_1);
-  transform: translateY(-2px);
 
   outline:0;
 }
@@ -119,8 +120,8 @@
   padding:0.5rem 1rem;
   border-radius:3px;
   position:absolute;
-  top:5rem;
-  right:3rem;
+  top:2.5rem;
+  right:2.5rem;
   opacity: 0;
   z-index: 1;
   transition:all ease-in-out 200ms;
