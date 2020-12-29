@@ -7,6 +7,7 @@
   --color-blue_4: hsl(200, 100%, 96%);
 
   --color-pink_1:hsla(330, 100%, 56%, 1);
+  --color-pink_2:hsla(330, 100%, 16%, 1);
 
   --color-text_1: hsl(200, 16%, 24%);
   --color-text_2: hsl(200, 16%, 56%);
@@ -20,7 +21,7 @@
   --color-black_6:hsl(200, 16%, 96%);
 
   --font-headline: "rift";
-  --font-body: "myriad-pro";
+  --font-body: "lft-etica";
 }
 
 body {
@@ -95,6 +96,14 @@ h3 + p {
 }
 
 p + p {
+  margin-top:1rem;
+}
+
+ol {
+  padding:2rem;
+}
+
+ol li + li {
   margin-top:1rem;
 }
 
@@ -214,12 +223,27 @@ img {
 
 figure.image-hasCaption {
   display: grid;
-  grid-template-columns: 1fr 10rem;
+  grid-template-columns: 1fr 12rem;
+  grid-gap: 2rem;
+}
+
+figure.two-image-hasCaption {
+  display: grid;
+  grid-template-columns: 1fr 1fr 12rem;
+  grid-gap: 1rem;
+}
+
+figure.image-hasCaption + figure.image-hasCaption {
+  margin-top:4rem;
 }
 
 figure figcaption {
   font-size:1rem;
   line-height: 1.5rem;
+}
+
+figure.image-hasCaption + section {
+  padding-top:4rem;
 }
 
 .workExample .mainContent > .gatsby-image-wrapper {

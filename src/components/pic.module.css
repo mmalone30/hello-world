@@ -1,6 +1,6 @@
 img.pic {
   width:16rem;
-
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 720px) {

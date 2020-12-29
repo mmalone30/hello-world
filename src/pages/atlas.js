@@ -9,12 +9,26 @@ export default () => {
     query {
       atlashomepage: file(relativePath: { eq: "atlas-homepage.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1920) {
+          fluid(maxWidth: 1920, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
       },
       persona: file(relativePath: { eq: "OS-persona.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1376, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      },
+      coreLoop: file(relativePath: { eq: "OS-CoreLoop.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1376, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      },
+      research: file(relativePath: { eq: "research.png" }) {
         childImageSharp {
           fluid(maxWidth: 1376, quality: 100) {
             ...GatsbyImageSharpFluid
@@ -56,30 +70,53 @@ export default () => {
         </p>
         <h3>Background</h3>
         <p>
-          In 2018, NEXT Trucking was born. It’s mission was to create something that never existed before—a digital app-based marketplace for truckers to find work bound to and from the ports of Los Angeles. At the time, the way truckers found work was through brokers who knew shippers bringing containers into terminals and could connect them with work. When the truckers had completed the job—picking up a container and delivering it to a warehouse farther inland—the trucker would get paid, the shipper invoiced, and the broker would receive a cut.
+          Businesses pay NEXT to bring their shipments from ports in LA and Long Beach to their warehouses in the United States.
+          NEXT manages the fulfillment of shipments with a proprietary software platform called ATLAS. Its flagship product is called Freight
+          and, by May of 2020, it was very hard to use. It had grown in size and scope; it was riddled with lots of features that were hard to
+          understand and differentiate.
         </p>
+
         <p>
-        NEXT has a vision for a disintermediated trucking marketplace, similar to Airbnb. Shippers can post their jobs that truckers can complete and get paid. On the surface, it looks like a fairly clean transaction. But in reality, it’s much more complicated.
+          This complexity in the product increased training costs, usability errors, interaction costs, and generally was not fun to use. These
+          outcomes were also directly affecting our top-level corporate goal—increase gross margins. We had the backing of our executive team to
+          figure out how we could improve both our user’s lives and our corporate objectives.
         </p>
-        <h3>The Problem</h3>
+        <h3>Our primary user</h3>
         <p>
-          Servicing a container is incredibly complicated. The goal is simple enough—get a container from a port, deliver it to a warehouse, and then—once it has been emptied by the warehouse staff—pick it up again and return it to the port. Accomplishing this goal requires dozens of people all communicating together, at times with competing priorities. It means matching containers from customers together into efficient and profitable bundles for drivers to complete. It means negotiating tight constraints on time and space, like when a customer service representative needs to find an appointment time at the terminal for pickup, match it with a container that needs to be returned, joggling the capacity of the terminal, and the delivery requirements of the customer. Then there are the things that go wrong—a container is blocked at the terminal, a container isn’t empty at the customer warehouse, driver gets a flat tire on the way to deliver, the driver is stuck in line to get into the terminal and misses the appointment, or a driver has to cancel due to a family emergency.
-        </p>
-        <p>
-        There are dozens, maybe hundreds, of service failure scenarios that need to be accounted for. That is the reality of any trucking business. On top of all that, we wanted to completely change how truckers found and completed work by using a marketplace app on their smartphone completely upending the status quo. Easy!
-        </p>
-        <p>
-          We needed a comprehensive, powerful, modern software suite for the back office. The toolkit needed to supply the driver app with jobs, to monitor those jobs, and to prevent, or at least resolve, the service failures that happen along the way with those jobs.
-        </p>
-        <h3>The primary user</h3>
-        <p>
-          My first task in understanding this problem was to learn from my primary user—Customer Service Representatives. Sometimes called CSRs or simply "Ops", these are the behind-the-scenes folks who are ensuring that NEXT's business runs smoothly.
+          The Operational Specialist (OS) is the main user of ATLAS Freight and is the type of person most likely to run into the issues we're addressing. The OS is like a customer service rep combined with a freight dispatcher. She is connecting all the dots required to move a shipment from point A to point B.
         </p>
       </section>
       <figure class="image-hasCaption">
         <Img fluid={data.persona.childImageSharp.fluid} />
         <figcaption>
           A model of the Operational Specialist (OS) goals, activities, and tasks.
+        </figcaption>
+      </figure>
+
+      <section>
+        <h3>What is causing the problems?</h3>
+        <p>
+        After observing and interviewing dozens of users working with Freight, we identified three main causes for the problems we identified.
+        </p>
+        <ol>
+          <li>
+            <strong>Behaviors are driven by shipment status and condition but we didn’t make it easy for OSs to understand what these are.</strong> For example,
+            when a shipment is blocked by customs at the terminal, a fee is usually required to be paid to release it. This only happens when the
+            shipment is in this state and once it leaves the terminal, it is never an issue again. But seeing this condition at a glance was difficult.
+          </li>
+          <li>
+            <strong>The tasks that need to be completed require lots of navigation, searching, and clicking around to complete them which eats up a lot of time and effort.</strong> For example, to make an appointment for a shipment to leave the terminal—a key task that must happen—users needed to find the shipment, navigate to the shipment detail page, find the correct load, click a dropdown menu, click a button to bring up a modal to change the appointment, enter the appointment and save. This is a very costly interaction, especially one that usually happens in bulk.
+          </li>
+          <li>
+            <strong>The product architecture is organized incoherently. User goals and tasks are scattered throughout the product with no clear reasoning.</strong> For example, to manage the successful fulfillment of shipments—a key user goal—users had to jump between two different sections of the
+            product constantly.
+          </li>
+        </ol>
+      </section>
+      <figure class="image-hasCaption">
+        <Img fluid={data.research.childImageSharp.fluid} />
+        <figcaption>
+          Some photos of me in the field conducting research. My approach to research is pretty simple—expose myself to users and really listen and watch what they are doing.
         </figcaption>
       </figure>
     </div>

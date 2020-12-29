@@ -20,9 +20,13 @@
 
 
 .work a:hover,.work a:focus {
-  background:var(--color-black_1);
+  background:var(--color-pink_1);
 
   outline:0;
+}
+
+.work a:hover .WorkItemDescription p, .work a:focus .WorkItemDescription p {
+  color:white;
 }
 
 .work a:hover .WorkItemImage:after, .work a:focus .WorkItemImage:after {
@@ -88,7 +92,7 @@
 .WorkItemDescription {
   padding:1.5rem;
   display:grid;
-  grid-gap: 0.25rem;
+  grid-gap: 1rem;
   grid-template-rows: minmax(min-content, max-content);
 }
 
@@ -96,6 +100,7 @@
 .WorkItemDescription small {
   align-self:end;
   color:var(--color-text_2);
+  transition: color ease-in-out 200ms;
 }
 
 .WorkItemDescription h3 {
@@ -107,8 +112,10 @@
 .WorkItemDescription p {
   color:var(--color-text_2);
   font-weight: 400;
+  font-size:1rem;
+  line-height: 1.5rem;
   margin:0;
-  max-width: 38rem;
+  transition: color ease-in-out 200ms;
 }
 
 .WorkItemLabel {
@@ -135,7 +142,7 @@
 
 .work a:hover .WorkItemDescription p, .work a:focus .WorkItemDescription p,
 .work a:hover .WorkItemDescription small, .work a:focus .WorkItemDescription small {
-  color:var(--color-text_2);
+  color:var(--color-pink_2);
 }
 
 .work a:hover .WorkItemLogo, .work a:focus .WorkItemLogo {
