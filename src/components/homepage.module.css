@@ -13,6 +13,9 @@
 
 .homepage h1 {
   color:white;
+  font-size:3rem;
+  line-height: 4rem;
+  max-width: 52rem;
 }
 
 .homepage nav[class*="nav"] ul li a[class*="active"] {
