@@ -17,8 +17,8 @@
   --color-black_2:hsl(200, 16%, 24%);
   --color-black_3:hsl(200, 16%, 56%);
   --color-black_4:hsl(200, 16%, 72%);
-  --color-black_5:hsl(200, 16%, 88%);
-  --color-black_6:hsl(200, 16%, 96%);
+  --color-black_5:hsl(200, 8%, 92%);
+  --color-black_6:hsl(200, 8%, 96%);
 
   --font-headline: "Poppins";
   --font-body: "Inter";
@@ -231,12 +231,17 @@ img {
 
 .about_section {
   max-width:80rem;
+  position: relative;
 }
 
 .about_section-content {
-  padding:1.5rem;
+  padding:3rem;
   background:white;
-  transform:translate(8rem, -4rem);
+  position: absolute;
+  top: 12rem;
+  left: 8rem;
+  right: 8rem;
+  padding-bottom: 8rem;
 }
 
 .about_section img {

@@ -7,8 +7,10 @@
 }
 
 .homepage + .homepage {
-  background: white;
+  background: linear-gradient(180deg, var(--color-black_6), white);
   padding-top:16rem;
+  padding-bottom: 8rem;
+  height: 100vh;
 }
 
 .homepage h1 {
