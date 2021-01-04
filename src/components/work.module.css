@@ -7,7 +7,7 @@
 
 
 .work a {
-  background-color:var(--color-black_0);
+  background-color:var(--color-black_1);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 96px 1fr;

@@ -4,6 +4,8 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import Container from "../components/container"
 import next from "../../static/next.svg"
+import { Link } from "gatsby"
+import Icons from "../components/icons"
 export default () => {
   const data = useStaticQuery(graphql`
     query {
@@ -41,8 +43,9 @@ export default () => {
   <div>
   <header>
     <Container className="container">
+      <Link to="/"><Icons />Back</Link>
       <h2>ATLAS Freight</h2>
-      <h3>Improving the user experience with a more coherent and intentional information architecture</h3>
+      <h3>Improving the user experience with a more coherent and intentional information architecture.</h3>
       <div class="workDetails">
         <h4>Company</h4>
         <p>NEXT Trucking</p>
@@ -66,7 +69,7 @@ export default () => {
       <Img fluid={data.atlashomepage.childImageSharp.fluid} />
       <section>
         <p class="lead">
-          I led the design on ATLAS which aims to organize and surface all NEXT Trucking internal proprietary software products into a cohesive, comprehensive software suite. The vision for ATLAS encompasses all internal user goals but the first step focused on a few key tasks and a new navigation to connect everything together.
+          The flagship internal product at NEXT Trucking had a deeply flawed information architecture that rendered it very difficult to use for even the most basic tasks. In this project, I'll walk you through how I learned about the problem, what I did about it, and the results so far.
         </p>
         <h3>Background</h3>
         <p>
