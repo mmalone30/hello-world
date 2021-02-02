@@ -166,6 +166,17 @@ table thead tr td {
   white-space: nowrap;
 }
 
+video {
+  max-width: 100%;
+  border-radius: 3px;
+  transition: box-shadow 200ms ease-in-out;
+}
+
+video:focus {
+  outline:0;
+  box-shadow: 0 0 0 2px var(--color-black_3), 0 0 0 6px var(--color-black_5);
+}
+
 .container-small {
   max-width: 52rem;
   margin: 0 auto;
@@ -219,6 +230,7 @@ header h2 {
 .workDetails {
   display: grid;
   grid-template-columns: 12rem 1fr;
+  align-items: center;
 }
 
 .workDetails + .workDetails {

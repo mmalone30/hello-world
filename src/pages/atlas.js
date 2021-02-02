@@ -6,6 +6,9 @@ import Container from "../components/container"
 import next from "../../static/next.svg"
 import { Link } from "gatsby"
 import Icons from "../components/icons"
+import FilterVideo from "../../static/startandend.mp4"
+import CopyVideo from "../../static/copyPasteCs.mp4"
+import EditVideo from "../../static/editShipments.mp4"
 export default () => {
   const data = useStaticQuery(graphql`
     query {
@@ -36,6 +39,34 @@ export default () => {
             ...GatsbyImageSharpFluid
           }
         }
+      },
+      atlasConcepts: file(relativePath: { eq: "atlas-concepts.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1376, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      },
+      oldOrders: file(relativePath: { eq: "Old-OrdersList.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1376, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      },
+      shipmentsList1: file(relativePath: { eq: "ShipmentsList1.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1376, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      },
+      itemDetail: file(relativePath: { eq: "itemDetail.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1376, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
       }
     }
  `)
@@ -45,7 +76,7 @@ export default () => {
     <Container className="container">
       <Link to="/"><Icons />Back</Link>
       <h2>ATLAS Freight</h2>
-      <h3>Improving the user experience with a more coherent and intentional information architecture.</h3>
+      <h3>Improving the user experience with a more coherent and intentional interaction design.</h3>
       <div class="workDetails">
         <h4>Company</h4>
         <p>NEXT Trucking</p>
@@ -122,6 +153,12 @@ export default () => {
           Some photos of me in the field conducting research. My approach to research is pretty simple—expose myself to users and really listen and watch what they are doing.
         </figcaption>
       </figure>
+      <figure class="image-hasCaption">
+        <Img fluid={data.oldOrders.childImageSharp.fluid} />
+        <figcaption>
+          This was the, at the time, the Orders list. It was responsible for managing all open orders (i.e., shipments) that our Operations team had to fulfill. It was hard to use because it didn't provide any sense of status, location, or relevant actions for the user. The design spit out every piece of data we had on a shipment and left the user alone to figure out what to do.
+        </figcaption>
+      </figure>
       <section>
         <h3>Design Principles</h3>
         <p>From the research and analysis, my team and I developed design principles that would guide our decision-making. These principles were most useful in design critiques and helped frame the discussion better. If we had good responses to these questions, then we knew we were on the right track.</p>
@@ -181,6 +218,64 @@ export default () => {
           </tbody>
         </table>
       </section>
+      <section>
+        <h3>Prototypes</h3>
+        <p>
+          With a firm understanding of the problem space, our principles, and our goals, we started testing low-fidelity click-through prototypes.
+          Overall, we evaluated nine distinct designs from usability tests with users and from design critiques with other designers and product executives.
+        </p>
+      </section>
+      <figure class="image-hasCaption">
+        <Img fluid={data.atlasConcepts.childImageSharp.fluid} />
+        <figcaption>
+          Slices of prototypes for a new Shipments list.
+        </figcaption>
+      </figure>
+      <section>
+        <h3>Solution</h3>
+        <p>
+          The big thing we learned is that organizing the "fulfillment" activities (recall the Persona above) in one place&mdash;rather than across different sections as it was&mdash;had huge usability wins. The current design split these activites across different sections of the product, a design we thought would be useful at the time.
+        </p>
+        <p>
+          We also learned that we were just not hitting the mark on the basics: better navigation and organization, bulk action tools, and faster load times for the Shipments list.
+        </p>
+      </section>
+      <figure class="image-hasCaption">
+        <Img fluid={data.shipmentsList1.childImageSharp.fluid} />
+        <figcaption>
+          The final execution of our improved Shipments list in ATLAS Freight. We added a robust navigation system on the left called Groups, Shipments now only display relevant information based on their current status and situation. There is a clear journey to show you where your shipments are and their next appointment. And a whole lot more.
+        </figcaption>
+      </figure>
+      <figure class="image-hasCaption">
+        <Img fluid={data.itemDetail.childImageSharp.fluid} />
+        <figcaption>
+          This diagram identifies the anatomy of the Shipment list item.
+        </figcaption>
+      </figure>
+      <figure class="image-hasCaption">
+        <video controls>
+          <source src={FilterVideo} type="video/mp4" />
+        </video>
+        <figcaption>
+          A video of the Filtering experience. Looking for matching shipments is a really important when shipments need to be rerouted. Making it easy to apply, remove, and identify applied filters is crucial to the success of the design.
+        </figcaption>
+      </figure>
+      <figure class="image-hasCaption">
+        <video controls>
+          <source src={CopyVideo} type="video/mp4" />
+        </video>
+        <figcaption>
+          OSs are constantly collaborating with terminals and steamship lists. This means copying and pasting lots of container #s into emails. This was the first bulk action we released and it was met with a very positive reaction.
+        </figcaption>
+      </figure>
+      <figure class="image-hasCaption">
+        <video controls>
+          <source src={EditVideo} type="video/mp4" />
+        </video>
+        <figcaption>
+          There is lots of data entry and data backfilling in our business. The previous design made data entry a horrible slog. With Bulk Action editing, we turned a rote, laborious task into a breeze. For example, in this video, what took 26 seconds would have taken 5 or more minutes to complete previously.
+        </figcaption>
+      </figure>
     </div>
   </div>
   </div>
