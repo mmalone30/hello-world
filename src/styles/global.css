@@ -9,6 +9,8 @@
   --color-pink_1:hsla(330, 100%, 56%, 1);
   --color-pink_2:hsla(330, 100%, 16%, 1);
 
+  --color-green_base: hsl(144deg, 88%, 32%);
+
   --color-text_1: hsl(200, 8%, 16%);
   --color-text_2: hsl(200, 8%, 48%);
 
@@ -22,6 +24,8 @@
 
   --font-headline: "Poppins";
   --font-body: "Inter";
+
+  --color-success: var(--color-green_base);
 
   --elevation-1: 0 6px 12px -4px rgba(0,0,0,0.16);
 }
@@ -76,8 +80,8 @@ h2 {
 }
 
 h3 {
-  font-size:24px;
-  line-height: 32px;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
 }
 
 h4 {
@@ -91,6 +95,16 @@ h4 + ul {
 
 p {
   max-width:50rem;
+}
+
+small {
+  display: block;
+  font-size:0.875rem;
+  line-height: 1.25rem;
+}
+
+p + small {
+  margin-top: 0.5rem;
 }
 
 strong {
@@ -310,6 +324,16 @@ img {
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
   margin-top:2rem;
+}
+
+.panels.three {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.panels h4.result {
+  font-size:3rem;
+  line-height: 4rem;
+  color: var(--color-success);
 }
 
 .panels .panel {

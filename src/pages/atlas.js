@@ -276,6 +276,27 @@ export default () => {
           There is lots of data entry and data backfilling in our business. The previous design made data entry a horrible slog. With Bulk Action editing, we turned a rote, laborious task into a breeze. For example, in this video, what took 26 seconds would have taken 5 or more minutes to complete previously.
         </figcaption>
       </figure>
+      <section>
+        <h3>Results</h3>
+
+        <div class="panels three">
+          <div class="panel">
+            <h4 class="result">-61%</h4>
+            <p>Time to make appointments</p>
+            <small>Average time reduction when finding 2 shipments to set outgating appointments.</small>
+          </div>
+          <div class="panel">
+            <h4 class="result">-49%</h4>
+            <p>Track and Trace time</p>
+            <small>Average time reduction when describing any 5 shipments' current location, next location, appointments, and job status.</small>
+          </div>
+          <div class="panel">
+            <h4 class="result">-58%</h4>
+            <p>Unblocking Shipments time</p>
+            <small>Average time reduction when marking shipments as available or empty.</small>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
   </div>
