@@ -100,7 +100,7 @@ export default () => {
       <Img fluid={data.atlashomepage.childImageSharp.fluid} />
       <section>
         <p class="lead">
-          The flagship internal product at NEXT Trucking had a deeply flawed information architecture that rendered it very difficult to use for even the most basic tasks. In this project, I'll walk you through how I learned about the problem, what I did about it, and the results so far.
+          The flagship internal product at NEXT Trucking had a deeply flawed information architecture that made it difficult to use for even the most basic tasks. In this project, I'll walk you through how I learned about the problem, what I did about it, and the results so far.
         </p>
         <h3>Background</h3>
         <p>

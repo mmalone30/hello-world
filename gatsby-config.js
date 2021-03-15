@@ -15,6 +15,15 @@
          path: path.join(__dirname, `src`, `images`),
        },
      },
+     {
+        resolve: "gatsby-plugin-web-font-loader",
+        options: {
+          custom: {
+            families: ["Segment-Regular, Segment-Medium, Segment-Semibold"],
+            urls: ["/fonts/segment.css"],
+          },
+        },
+      },
      `gatsby-plugin-sharp`,
      `gatsby-transformer-sharp`
    ]

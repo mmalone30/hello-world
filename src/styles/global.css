@@ -1,29 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;550&family=Poppins:wght@300;400;500&display=swap');
 
+
 :root{
-  --color-blue_1: hsl(200, 100%, 48%);
-  --color-blue_2: hsl(200, 100%, 72%);
-  --color-blue_3: hsl(200, 100%, 88%);
-  --color-blue_4: hsl(200, 100%, 96%);
+  --blue-48: hsl(200, 100%, 48%);
+  --blue-72: hsl(200, 100%, 72%);
+  --blue-88: hsl(200, 100%, 88%);
+  --blue-96: hsl(200, 100%, 96%);
 
   --color-pink_1:hsla(330, 100%, 56%, 1);
   --color-pink_2:hsla(330, 100%, 16%, 1);
 
-  --color-green_base: hsl(144deg, 88%, 32%);
+  --pink-16: var(--color-pink_2);
+  --pink-56: var(--color-pink_1);
 
-  --color-text_1: hsl(200, 8%, 16%);
-  --color-text_2: hsl(200, 8%, 48%);
+  --green-32: hsl(144deg, 88%, 32%);
+
+  --color-green_base: var(--green-32);
 
   --color-black_0:hsl(200, 24%, 4%);
   --color-black_1:hsl(200, 16%, 8%);
-  --color-black_2:hsl(200, 16%, 24%);
-  --color-black_3:hsl(200, 16%, 56%);
-  --color-black_4:hsl(200, 16%, 72%);
-  --color-black_5:hsl(200, 8%, 92%);
-  --color-black_6:hsl(200, 8%, 96%);
+  --color-black_2:hsl(200, 8%, 24%);
+  --color-black_3:hsl(200, 8%, 56%);
+  --color-black_4:hsl(200, 4%, 72%);
+  --color-black_5:hsl(200, 4%, 92%);
+  --color-black_6:hsl(200, 4%, 96%);
 
-  --font-headline: "Poppins";
-  --font-body: "Inter";
+  --black-4: var(--color-black_0);
+  --black-8: var(--color-black_1);
+  --black-24: var(--color-black_2);
+  --black-48: hsl(200, 8%, 48%);
+  --black-56: var(--color-black_3);
+  --black-72: var(--color-black_4);
+  --black-92: var(--color-black_5);
+  --black-96: var(--color-black_6);
+
+  --color-headline: var(--black-4);
+
+  --color-text_1: var(--black-24);
+  --color-text_2: var(--black-48);
+
+  --font-headline: "Segment-Semibold";
+  --font-body: "Segment-Regular";
+  --font-lead: "Segment-Medium";
 
   --color-success: var(--color-green_base);
 
@@ -50,7 +68,7 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-  color:hsl(200, 16%, 8%);
+  color:var(--color-headline);
   font-weight:500;
   font-family: var(--font-headline);
 }
@@ -115,7 +133,8 @@ strong {
   font-size:2rem;
   line-height: 3rem;
   font-weight: 500;
-  font-family: var(--font-headline);
+  font-family: var(--font-lead);
+  color: var(--color-headline);
   max-width: 62rem;
 }
 
