@@ -18,6 +18,7 @@
   font-size:3.5rem;
   line-height: 4.5rem;
   max-width: 52rem;
+  margin-bottom: 8rem;
 }
 
 .homepage nav[class*="nav"] ul li a[class*="active"] {
@@ -42,5 +43,26 @@
 @media screen and (max-width: 575px) {
   .homepage {
     padding:0rem;
+  }
+
+  .homepage h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .homepage + .homepage {
+    padding-top: 8rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .homepage + .homepage {
+    padding-top: 12rem;
+  }
+
+  .homepage h1 {
+    margin-top: 0rem;
   }
 }

@@ -168,19 +168,28 @@
   opacity:0;
 }
 
+@media screen and (max-width: 675px) {
+  .work {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+}
+
 @media screen and (max-width: 575px) {
   .work {
     grid-template-columns: auto;
-    grid-gap: 3rem;
+    grid-gap: 2rem;
   }
   .WorkItemLabel {
     opacity: 1;
-    bottom:0rem;
+    bottom:1rem;
     top:auto;
-    left:0;
-    right:0;
+    left:1rem;
+    right:1rem;
     text-align: center;
     transform:translateY(0);
+    background: var(--black-24);
+    color: white;
   }
 
   .work a {

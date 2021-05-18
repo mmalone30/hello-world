@@ -186,37 +186,39 @@ export default () => {
         <p>
           With the problem and design principles well understood, we defined what success looks like for this project.
         </p>
-        <table>
-          <thead>
-            <tr>
-              <td>Success</td>
-              <td>Task</td>
-              <td>Average Time (in sec)</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Reduce track and trace time per shipment per user</td>
-              <td>For any 5 shipments in the Shipments list, tell me the current location, next location (if any), and its job status</td>
-              <td>194</td>
-            </tr>
-            <tr>
-              <td>Reduce time to make appointment per shipment per user</td>
-              <td>Find 2 shipments that are available to outgate and enter this outgate appointment: 00:00 00/00/00</td>
-              <td>92</td>
-            </tr>
-            <tr>
-              <td>Reduce mark empty time</td>
-              <td>Find 2 shipments to mark empty</td>
-              <td>51</td>
-            </tr>
-            <tr>
-              <td>Reduce mark availability time</td>
-              <td>Find 2 shipments to mark available</td>
-              <td>61</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Success</th>
+                <th>Task</th>
+                <th>Average Time (in sec)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Reduce track and trace time per shipment per user</td>
+                <td>For any 5 shipments in the Shipments list, tell me the current location, next location (if any), and its job status</td>
+                <td>194</td>
+              </tr>
+              <tr>
+                <td>Reduce time to make appointment per shipment per user</td>
+                <td>Find 2 shipments that are available to outgate and enter this outgate appointment: 00:00 00/00/00</td>
+                <td>92</td>
+              </tr>
+              <tr>
+                <td>Reduce mark empty time</td>
+                <td>Find 2 shipments to mark empty</td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>Reduce mark availability time</td>
+                <td>Find 2 shipments to mark available</td>
+                <td>61</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
       <section>
         <h3>Prototypes</h3>
@@ -280,17 +282,17 @@ export default () => {
         <h3>Results</h3>
 
         <div class="panels three">
-          <div class="panel">
+          <div class="panel success">
             <h4 class="result">-61%</h4>
             <p>Time to make appointments</p>
             <small>Average time reduction when finding 2 shipments to set outgating appointments.</small>
           </div>
-          <div class="panel">
+          <div class="panel success">
             <h4 class="result">-49%</h4>
             <p>Track and Trace time</p>
             <small>Average time reduction when describing any 5 shipments' current location, next location, appointments, and job status.</small>
           </div>
-          <div class="panel">
+          <div class="panel success">
             <h4 class="result">-58%</h4>
             <p>Unblocking Shipments time</p>
             <small>Average time reduction when marking shipments as available or empty.</small>
