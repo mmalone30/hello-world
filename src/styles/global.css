@@ -526,6 +526,7 @@ figure.image-hasCaption + section {
   }
   .links {
     grid-template-columns: 1fr;
+    grid-gap: 1rem;
   }
 }
 
