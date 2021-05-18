@@ -153,6 +153,20 @@ h3 + p {
   margin-top:1rem;
 }
 
+h3 + h4 {
+  margin-top: 2rem;
+  color: var(--black-48);
+}
+
+h4 + p {
+  margin-top: 0.25rem;
+}
+
+p + h4 {
+  margin-top: 2rem;
+  color: var(--black-48);
+}
+
 p + p {
   margin-top:1rem;
 }
@@ -181,6 +195,10 @@ table {
   line-height: 1.5rem;
   border: 1px solid var(--color-black_5);
   border-radius: 3px;
+}
+
+p + .table-wrapper {
+  margin-top: 2rem;
 }
 
 p + table {
@@ -374,6 +392,10 @@ img {
   line-height: 1.5rem;
 }
 
+.panels + p {
+  margin-top: 2rem;
+}
+
 figure.image-hasCaption {
   display: grid;
   grid-template-columns: 1fr 12rem;
@@ -422,6 +444,11 @@ figure.image-hasCaption + section {
 
   p + h3 {
     margin-top: 2rem;
+  }
+
+  h4 {
+    font-size: 1.15rem;
+    line-height: 1.5rem;
   }
 
   .lead {

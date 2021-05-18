@@ -182,9 +182,18 @@ export default () => {
         </div>
       </section>
       <section>
+        <h3>Project Goals</h3>
+        <h4>Reduce "pogosticking"</h4>
+        <p>We want to see less jumping between Shipments and Loads. Ideally, Shipments is so useful that there's no need for the Loads page.</p>
+        <h4>Reduce time to complete core tasks</h4>
+        <p>We want to make it easier to do the things that OSs do frequently and for us that means reducing the time it takes to complete them.</p>
+        <h4>Increase engagement in the Shipments List</h4>
+        <p>We're trying to make the Shipments list more useful so we want to see if people are using it more often.</p>
+      </section>
+      <section>
         <h3>Success Metrics &amp; Current Values</h3>
         <p>
-          With the problem and design principles well understood, we defined what success looks like for this project.
+          With the problem and design principles well understood, we defined what success looks like for this project. Below are the specific tasks we aim to improve along with the baseline time that we recorded (based on 5 users).
         </p>
         <div class="table-wrapper">
           <table>
@@ -280,24 +289,26 @@ export default () => {
       </figure>
       <section>
         <h3>Results</h3>
-
+        <p>The following results are derived from usage data captured between September 2020 to April 2021.</p>
         <div class="panels three">
           <div class="panel success">
-            <h4 class="result">-61%</h4>
-            <p>Time to make appointments</p>
-            <small>Average time reduction when finding 2 shipments to set outgating appointments.</small>
+            <h4 class="result">49&ndash;61%</h4>
+            <p>Reduction in Time to Complete Core Tasks</p>
+            <small>Measuring appointments, track and trace, and unblocking shipments.</small>
           </div>
           <div class="panel success">
-            <h4 class="result">-49%</h4>
-            <p>Track and Trace time</p>
-            <small>Average time reduction when describing any 5 shipments' current location, next location, appointments, and job status.</small>
+            <h4 class="result">480%</h4>
+            <p>Increase in Engagement</p>
+            <small>When measuring average total engagement for the Shipments list. Loads engagement declined 61% and was deprecated on April 1.</small>
           </div>
           <div class="panel success">
-            <h4 class="result">-58%</h4>
-            <p>Unblocking Shipments time</p>
-            <small>Average time reduction when marking shipments as available or empty.</small>
+            <h4 class="result">264%</h4>
+            <p>Increase in Average Engagement per User</p>
+            <small>Not only did total engagement increase but we also saw a big jump in engagement on a per user level.</small>
           </div>
         </div>
+        <p>These results tell me a few things. We were successful in our primary goals. We redesigned the experience to make it easier to do a whole bunch of stuff. And in doing so, we drove engagement and attention away from similar features (i.e., the Loads page). This reduces annoying "pogosticking" behaviors but it also showed more people that the Shipments list <em>is</em> the place to go to do your work in ATLAS Freight.</p>
+        <p>In addition to the increase in engagement, we also saw a <strong>big jump in new users</strong>&mdash;79 to be precise (up 61%).</p>
       </section>
     </div>
   </div>
