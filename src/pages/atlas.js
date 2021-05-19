@@ -67,6 +67,13 @@ export default () => {
             ...GatsbyImageSharpFluid
           }
         }
+      },
+      shipmentListIteration: file(relativePath: { eq: "ShipmentsList-iterate.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1376, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
       }
     }
  `)
@@ -285,6 +292,12 @@ export default () => {
         </video>
         <figcaption>
           There is lots of data entry and data backfilling in our business. The previous design made data entry a horrible slog. With Bulk Action editing, we turned a rote, laborious task into a breeze. For example, in this video, what took 26 seconds would have taken 5 or more minutes to complete previously.
+        </figcaption>
+      </figure>
+      <figure class="image-hasCaption">
+        <Img fluid={data.shipmentListIteration.childImageSharp.fluid} />
+        <figcaption>
+          Much of the success of this project comes from our iterative approach. With every improvement, we're sensing, responding, and learning. Here is a peek at some of the new improvements coming soon (as of May 2021).
         </figcaption>
       </figure>
       <section>
