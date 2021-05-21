@@ -169,33 +169,33 @@ export default () => {
       <section>
         <h3>Design Principles</h3>
         <p>From the research and analysis, my team and I developed design principles that would guide our decision-making. These principles were most useful in design critiques and helped frame the discussion better. If we had good responses to these questions, then we knew we were on the right track.</p>
-        <div class="panels two">
-          <div class="panel">
-            <h4>Coherence</h4>
-            <ul>
-              <li>Do the parts form a unified and understandable whole?</li>
-              <li>Do the parts align with user goals in a clear and logical way?</li>
-              <li>Are the seams in the experience clear, consistent, and logical?</li>
-            </ul>
-          </div>
-          <div class="panel">
-            <h4>Intentionality</h4>
-            <ul>
-              <li>Are the relevant parts presented at the right time?</li>
-              <li>Do the parts enable a specific action under a given circumstance?</li>
-              <li>Are the conditions of the parts clearly presented?</li>
-            </ul>
-          </div>
-        </div>
+        <h4>Coherence</h4>
+        <ul>
+          <li>Do the parts form a unified and understandable whole?</li>
+          <li>Do the parts align with user goals in a clear and logical way?</li>
+          <li>Are the seams in the experience clear, consistent, and logical?</li>
+        </ul>
+        <h4>Intentionality</h4>
+        <ul>
+          <li>Are the relevant parts presented at the right time?</li>
+          <li>Do the parts enable a specific action under a given circumstance?</li>
+          <li>Are the conditions of the parts clearly presented?</li>
+        </ul>
       </section>
       <section>
         <h3>Project Goals</h3>
         <h4>Reduce "pogosticking"</h4>
-        <p>We want to see less jumping between Shipments and Loads. Ideally, Shipments is so useful that there's no need for the Loads page.</p>
+        <ul>
+          <li>Reduce time and effort jumping between Shipments and Loads.</li>
+          <li>Reduce engagement on Loads</li>
+          <li>Increase engagement on Shipments</li>
+        </ul>
         <h4>Reduce time to complete core tasks</h4>
-        <p>We want to make it easier to do the things that OSs do frequently and for us that means reducing the time it takes to complete them.</p>
-        <h4>Increase engagement in the Shipments List</h4>
-        <p>We're trying to make the Shipments list more useful so we want to see if people are using it more often.</p>
+        <ul>
+          <li>Making appointments</li>
+          <li>"Unblocking" shipments from the terminal and customer yards</li>
+          <li>Track and trace of drivers in transit</li>
+        </ul>
       </section>
       <section>
         <h3>Success Metrics &amp; Current Values</h3>
