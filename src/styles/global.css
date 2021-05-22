@@ -399,6 +399,16 @@ img {
   margin-top: 2rem;
 }
 
+p + figure {
+  margin-top: 2rem;
+}
+
+figure.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
 figure.image-hasCaption {
   display: grid;
   grid-template-columns: 1fr 12rem;
@@ -493,6 +503,10 @@ figure.image-hasCaption + section {
     margin-bottom: 2rem;
   }
 
+  figure.grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .workDetails {
     grid-template-columns: 1fr;
   }
@@ -566,6 +580,10 @@ figure.image-hasCaption + section {
     margin-bottom:2rem;
     font-size:2rem;
     line-height: 2.5rem;
+  }
+
+  figure.grid {
+    grid-template-columns: 1fr;
   }
 
   .about_section-content {

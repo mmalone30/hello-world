@@ -74,6 +74,90 @@ export default () => {
             ...GatsbyImageSharpFluid
           }
         }
+      },
+      SLPrototypes1: file(relativePath: { eq: "1_SLPrototypes.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 800, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      },
+      SLPrototypes2: file(relativePath: { eq: "2_SLPrototypes.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 800, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      },
+      SLPrototypes3: file(relativePath: { eq: "3_SLPrototypes.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 800, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      },
+      SLPrototypes4: file(relativePath: { eq: "4_SLPrototypes.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 800, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      },
+      SLPrototypes5: file(relativePath: { eq: "5_SLPrototypes.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 800, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      },
+      SLPrototypes6: file(relativePath: { eq: "6_SLPrototypes.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 800, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      },
+      SLPrototypes7: file(relativePath: { eq: "7_SLPrototypes.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 800, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      },
+      SLPrototypes8: file(relativePath: { eq: "8_SLPrototypes.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 800, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      },
+      SLPrototypes9: file(relativePath: { eq: "9_SLPrototypes.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 800, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      },
+      SLPrototypes10: file(relativePath: { eq: "10_SLPrototypes.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 800, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      },
+      SLPrototypes11: file(relativePath: { eq: "11_SLPrototypes.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 800, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      },
+      SLPrototypes12: file(relativePath: { eq: "12_SLPrototypes.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 800, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
       }
     }
  `)
@@ -242,13 +326,22 @@ export default () => {
           With a firm understanding of the problem space, our principles, and our goals, we started testing low-fidelity click-through prototypes.
           Overall, we evaluated nine distinct designs from usability tests with users and from design critiques with other designers and product executives.
         </p>
+        <figure class="grid">
+          <Img fluid={data.SLPrototypes1.childImageSharp.fluid} />
+          <Img fluid={data.SLPrototypes2.childImageSharp.fluid} />
+          <Img fluid={data.SLPrototypes3.childImageSharp.fluid} />
+          <Img fluid={data.SLPrototypes4.childImageSharp.fluid} />
+          <Img fluid={data.SLPrototypes5.childImageSharp.fluid} />
+          <Img fluid={data.SLPrototypes6.childImageSharp.fluid} />
+          <Img fluid={data.SLPrototypes7.childImageSharp.fluid} />
+          <Img fluid={data.SLPrototypes8.childImageSharp.fluid} />
+          <Img fluid={data.SLPrototypes9.childImageSharp.fluid} />
+          <Img fluid={data.SLPrototypes10.childImageSharp.fluid} />
+          <Img fluid={data.SLPrototypes11.childImageSharp.fluid} />
+          <Img fluid={data.SLPrototypes12.childImageSharp.fluid} />
+        </figure>
       </section>
-      <figure class="image-hasCaption">
-        <Img fluid={data.atlasConcepts.childImageSharp.fluid} />
-        <figcaption>
-          Slices of prototypes for a new Shipments list.
-        </figcaption>
-      </figure>
+
       <section>
         <h3>Solution</h3>
         <p>
